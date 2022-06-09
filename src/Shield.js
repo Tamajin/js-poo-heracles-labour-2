@@ -1,6 +1,6 @@
 class Shield{
     constructor (protection = 10){
-        this.protection = protection
+        this.protection = protection;
     }
 };
 
