@@ -21,11 +21,11 @@ class Fighter {
     }
     
     getDamage(){
-        return this.strength + this.weapon;
+        return this.weapon ? this.strength + this.weapon : this.strength;
     }
 
     getDefense(){
-        return this.dexterity + this.shield;
+        return this.shield ? this.dexterity + this.shield : this.dexterity;
     }
 
     // Generate a random value between 1 and max
@@ -39,5 +39,4 @@ class Fighter {
         return this.life > 0;
     }
 }
-
 module.exports = Fighter;
