@@ -4,7 +4,7 @@ const Shield = require("./src/Shield.js");
 
 /** Create Heracles  */
 const sword = new Weapon("Épee", this.damage);
-const shield = new Shield("Bouclier", this.protection);
+const shield = new Shield(this.protection);
 const heracles = new Fighter("🧔 Heracles", 20, 6, sword, shield);
 
 /** Create the opponent  */
