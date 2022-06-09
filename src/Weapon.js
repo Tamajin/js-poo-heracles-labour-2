@@ -3,6 +3,6 @@ class Weapon{
         this.name = name;
         this.damage = damage;
     }
-}
+};
 
 module.exports = Weapon;
