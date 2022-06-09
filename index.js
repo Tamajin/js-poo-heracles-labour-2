@@ -5,7 +5,7 @@ const Shield = require("./src/Shield.js");
 /** Create Heracles  */
 const sword = new Weapon("Épee", this.damage);
 const shield = new Shield(this.protection);
-const heracles = new Fighter("🧔 Heracles", 20, 6, sword, shield);
+const heracles = new Fighter("🧔 Heracles", 20, 6, sword.damage, shield.protection);
 
 /** Create the opponent  */
 const boar = new Fighter("🐗 Erymanthian Boar", 25, 12);
@@ -51,5 +51,3 @@ const score = (fighter1, fighter2) => {
   console.log(`💀 ${result.loser.name} is dead`);
   console.log(`🏆 ${result.winner.name} wins (💙 ${result.winner.life} )`);
 };
-
-heracles.fight(boar);
