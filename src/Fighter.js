@@ -13,7 +13,7 @@ class Fighter {
 
     // Launch a fight
     fight(defender) {
-        const attackPoints = this.getRandomInt(this.getDamage(), 0);
+        const attackPoints = this.getRandomInt(this.getDamage());
 
         const damages = Math.max(attackPoints - this.getDefense(), 0);
 
