@@ -21,11 +21,11 @@ class Fighter {
     }
     
     getDamage(){
-        return this.weapon ? this.strength + this.weapon : this.strength;
+        return this.weapon ? this.strength + this.weapon.damage : this.strength;
     }
 
     getDefense(){
-        return this.shield ? this.dexterity + this.shield : this.dexterity;
+        return this.shield ? this.dexterity + this.shield.protection : this.dexterity;
     }
 
     // Generate a random value between 1 and max
