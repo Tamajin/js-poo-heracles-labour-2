@@ -3,9 +3,9 @@ const Weapon = require("./src/Weapon.js");
 const Shield = require("./src/Shield.js");
 
 /** Create Heracles  */
-const sword = new Weapon("Épee", this.damage);
-const shield = new Shield(this.protection);
-const heracles = new Fighter("🧔 Heracles", 20, 6, sword.damage, shield.protection);
+const sword = new Weapon("Épee");
+const shield = new Shield;
+const heracles = new Fighter("🧔 Heracles", 20, 6, sword, shield);
 
 /** Create the opponent  */
 const boar = new Fighter("🐗 Erymanthian Boar", 25, 12);
